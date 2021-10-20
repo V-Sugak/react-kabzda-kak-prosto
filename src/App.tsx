@@ -8,9 +8,9 @@ function App() {
     console.log('App rendering')
     return (
         <div>
-            <PageTitle title={'This is App component'}/>
+            {/* <PageTitle title={'This is App component'}/>
             <PageTitle title={'My friends'}/>
-            <Rating value={3}/>
+            <Rating value={3}/>*/}
             <Accordion title={'Menu'} collapsed={true}/>
             <Accordion title={'Books'} collapsed={false}/>
             <Rating value={0}/>
