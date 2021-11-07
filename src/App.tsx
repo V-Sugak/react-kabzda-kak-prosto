@@ -3,15 +3,18 @@ import './App.css';
 import Accordion from "./components/Accordion/Accordion";
 import Rating from "./components/Rating/Rating";
 import {OnOff} from "./components/OnOff/OnOff";
-import UncontrolledAccordion from "./components/UncontrolledAccordion/Accordion";
+import UncontrolledAccordion from "./components/UncontrolledAccordion/UncontrolledAccordion";
+import {UncontrolledRating} from "./components/UncontrolledRating/UncontrolledRating";
 
 
 function App() {
     console.log('App rendering')
     return (
-        <div>
+        <div className="App">
             <UncontrolledAccordion title={'Menu'}/>
             <UncontrolledAccordion title={'Books'}/>
+
+            <UncontrolledRating/>
 
             {/* <PageTitle title={'This is App component'}/>
             <PageTitle title={'My friends'}/>
