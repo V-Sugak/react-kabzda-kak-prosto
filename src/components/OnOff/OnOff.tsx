@@ -2,11 +2,12 @@ import React, {useState} from "react";
 import s from "./OnOff.module.css"
 
 type OnOffPropsType = {
-//    on:boolean
+    on: boolean
+    setOn: (on: boolean) => void
 }
 
-export const OnOff = (props: OnOffPropsType) => {
-    const [on, setOn] = useState<boolean>(false)
+export const OnOff = ({on,setOn,...props}: OnOffPropsType) => {
+
     return (
         <div className={s.contenes}>
             <div onClick={() => setOn(true)} className={`${on ? `${s.on}` : ''}  ${s.button}`}>on</div>
