@@ -1,13 +1,14 @@
 import React, {useState} from "react";
 import s from "./UncontrolledOnOff.module.css"
 
-type UncontrolledOnOffPropsType = {
+export type UncontrolledOnOffPropsType = {
 //    on:boolean
     onClick: ( on:boolean) => void
+    defaultOn?:boolean
 }
 
 export const UncontrolledOnOff = (props: UncontrolledOnOffPropsType) => {
-    const [on, setOn] = useState<boolean>(false)
+    const [on, setOn] = useState<boolean>(props.defaultOn ? props.defaultOn : false)
     const onClicked = () => {
         setOn(true);
         props.onClick(true)

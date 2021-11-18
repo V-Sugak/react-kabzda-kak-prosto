@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import s from "./OnOff.module.css"
 
-type OnOffPropsType = {
+export type OnOffPropsType = {
     on: boolean
     setOn: (on: boolean) => void
 }
