@@ -17,7 +17,6 @@ function App() {
 
     return (
         <div className="App">
-            <UncontrolledRating/>
             <Rating value={ratingValue} setRatingValue={setRatingValue}/>
             <Accordion title={'Books'} collapsed={accordionCollapsed} setAccordionCollapsed={setAccordionCollapsed}/>
             {/*<OnOff on={on} setOn={setOn}/>*/}
