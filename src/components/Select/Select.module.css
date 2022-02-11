@@ -16,3 +16,8 @@
 .select.active .items {
     display: block;
 }
+
+.item.selected {
+    background-color: #1ea7fd;
+    color: white;
+}
