@@ -9,7 +9,14 @@ export type AccordionPropsType = {
     title: string
     collapsed: boolean
     setAccordionCollapsed: (collapsed: boolean) => void
+    /**
+     * Element that showed when it is open (not collapsed)
+     */
     items: ItemType[]
+    /**
+     * Callback that is called when some item clicked
+     * @param value is value of clicked item
+     */
     onClick: (value: any) => void
 }
 
