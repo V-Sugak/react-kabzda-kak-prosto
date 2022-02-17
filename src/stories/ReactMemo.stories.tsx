@@ -5,7 +5,7 @@ export default {
 }
 
 type CounterPropsType = { count: number }
-type UsersPropsType = { users: Array<string> }
+export type UsersPropsType = { users: Array<string> }
 
 const Counter = (props: CounterPropsType) => {
     return <div>{props.count}</div>
