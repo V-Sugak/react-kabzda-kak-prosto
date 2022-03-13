@@ -71,13 +71,13 @@ export const SetIntervalExample = () => {
     const [counter, setCounter] = useState(1);
 
 
-    useEffect(() => {
+   /* useEffect(() => {
 
         setInterval(() => {
             setCounter((state) => state + 1);
         }, 1000)
 
-    }, [])
+    }, [])*/
 
 
     return <>
